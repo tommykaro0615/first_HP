@@ -1,0 +1,52 @@
+#concept {
+    padding: 12% 0%;
+    background: linear-gradient(180deg,#A193861F 0%,#A193861F 40%,#A1938689 60%,#A1938689 100%);
+
+}
+
+.concept_text {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    @include tab {
+        flex-direction: column;
+        // padding: 10% 20%;
+    }
+    & .concept_title {
+        font-size: 3rem;
+        width: 60%;
+        @include tab {
+            width: 100%;
+            text-align: center;
+            padding: 5% 10%;
+        }
+    }
+    & .concept_para {
+        width: 40%;
+        @include tab {
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+.concept_img {
+    width: 100%;
+    // display: flex;
+    // justify-content: space-between;
+    &_1 {
+        width: 50vw;
+        @include tab {
+            // width: 50%;
+            // height: 50%;
+            // height: ;
+        }
+    }
+    &_2 {
+        width: 30vw;
+        @include tab {
+            // width: 50%;
+        }
+    }
+}

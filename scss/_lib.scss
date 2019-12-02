@@ -1,0 +1,47 @@
+@mixin pc {
+    @media screen and (min-width: 901px){
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (max-width: 900px){
+        @content;
+    }
+}
+@mixin sp {
+    @media screen and (max-width: 600px){
+        @content;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+// section {
+//     height: 100vh;
+// }
+
+.wrap {
+    width: 100% - 16%;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100% - 16%;
+    margin: 0 auto;
+    color: #707070;
+    &::after {
+        display: inline-block;
+        content: "";
+        background: #707070;
+        height: 1px;
+        width: 4.4rem;
+        margin-bottom: 0.6rem;
+        margin-left: 1.5rem;
+    }
+}

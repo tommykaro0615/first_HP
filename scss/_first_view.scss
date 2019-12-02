@@ -1,0 +1,35 @@
+#first_view {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    @include tab {
+        background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+        background-size: cover;
+        width: 100%;
+        padding-top: 110px;
+    }
+}
+.first_view_img {
+    width: 100vw;
+    background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+    background-size: cover;
+    @include tab {
+        background-image: none;
+        top: 70px;
+    }
+}
+
+.first_view_text {
+    position: absolute;
+    top: 37.5%;
+    left: 10%;
+    font-size: 3.8rem;
+    font-family: "メイリオ", sans-serif;
+    @include tab {
+        top: 50%;
+        left: 30%;
+
+        color: white;
+
+    }
+}
